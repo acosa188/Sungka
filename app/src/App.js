@@ -5,20 +5,50 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main className="container mt-5">
+
+        <div className="d-block d-md-none">
+          <h1 className="display-3">Please switch to landscape mode</h1>
+        </div>
+
+        <div class="d-none d-md-block">
+          <div className="row">
+            <div className="col b-bg"></div>
+  
+            <div className="col-8 p-bg">
+  
+              <div className="d-flex flex-column h-100">
+                <div className="g-bg flex-fill my-2">
+                  <div className="row px-2 h-100">
+                    <div className="col h-100 r-bg mx-1"></div>
+                    <div className="col h-100 r-bg mx-1"></div>
+                    <div className="col h-100 r-bg mx-1"></div>
+                    <div className="col h-100 r-bg mx-1"></div>
+                    <div className="col h-100 r-bg mx-1"></div>
+                    <div className="col h-100 r-bg mx-1"></div>
+                    <div className="col h-100 r-bg mx-1"></div>
+                  </div>
+                </div>
+                <div className="g-bg flex-fill my-2" >
+                <div className="row px-2 h-100">
+                    <div className="col h-100 r-bg mx-1"></div>
+                    <div className="col h-100 r-bg mx-1"></div>
+                    <div className="col h-100 r-bg mx-1"></div>
+                    <div className="col h-100 r-bg mx-1"></div>
+                    <div className="col h-100 r-bg mx-1"></div>
+                    <div className="col h-100 r-bg mx-1"></div>
+                    <div className="col h-100 r-bg mx-1"></div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+  
+            <div className="col b-bg"></div>
+          </div>
+        </div>
+
+      </main>
     </div>
   );
 }
