@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
       blueScore: {
         team: "blue",
-        score: this.props.game.blueScore,
+        score: this.props.game.holes[7],
         first_base: {
           position: 7,
           pebbles: this.props.game.holes[6]
@@ -44,34 +44,34 @@ class App extends Component {
       },
       redScore: {
         team: "red",
-        score: this.props.game.redScore,
+        score: this.props.game.holes[15],
         first_base: {
           position: 1,
-          pebbles: this.props.game.holes[7]
+          pebbles: this.props.game.holes[8]
         },
         second_base: {
           position: 2,
-          pebbles: this.props.game.holes[8]
+          pebbles: this.props.game.holes[9]
         },
         third_base: {
           position: 3,
-          pebbles: this.props.game.holes[9]
+          pebbles: this.props.game.holes[10]
         },
         fourth_base: {
           position: 4,
-          pebbles: this.props.game.holes[10]
+          pebbles: this.props.game.holes[11]
         },
         fifth_base: {
           position: 5,
-          pebbles: this.props.game.holes[11]
+          pebbles: this.props.game.holes[12]
         },
         sixth_base: {
           position: 6,
-          pebbles: this.props.game.holes[12]
+          pebbles: this.props.game.holes[13]
         },
         seventh_base: {
           position: 7,
-          pebbles: this.props.game.holes[13]
+          pebbles: this.props.game.holes[14]
         }
       }
     }
@@ -80,12 +80,12 @@ class App extends Component {
   componentDidUpdate(prevProps){
 
     // update blue score
-    if(this.props.game.blueScore !== this.state.blueScore.score){
+    if(this.props.game.holes[7] !== this.state.blueScore.score){
       this.setState(prevState => ({
         ...prevState,
         blueScore:{
           ...prevState.blueScore,
-          score: this.props.game.blueScore
+          score: this.props.game.holes[7]
         }
       }))
     }
@@ -191,109 +191,109 @@ class App extends Component {
 
     // updating red
     // update red score
-    if(this.props.game.redScore !== this.state.redScore.score){
+    if(this.props.game.holes[15] !== this.state.redScore.score){
       this.setState(prevState => ({
         ...prevState,
         redScore:{
           ...prevState.redScore,
-          score: this.props.game.redScore
+          score: this.props.game.holes[15]
         }
       }))
     }
 
     // update red 1st hole
-    if(this.props.game.holes[7] !== this.state.redScore.first_base.pebbles){
+    if(this.props.game.holes[8] !== this.state.redScore.first_base.pebbles){
       this.setState(prevState =>({
         ...prevState,
         redScore:{
           ...prevState.redScore,
           first_base:{
             ...prevState.redScore.first_base,
-            pebbles: this.props.game.holes[7]
-          }
-        }
-      }))
-    }
-
-    // update red 2nd hole
-    if(this.props.game.holes[8] !== this.state.redScore.second_base.pebbles){
-      this.setState(prevState =>({
-        ...prevState,
-        redScore:{
-          ...prevState.redScore,
-          second_base:{
-            ...prevState.redScore.second_base,
             pebbles: this.props.game.holes[8]
           }
         }
       }))
     }
 
-    // update red 3rd hole
-    if(this.props.game.holes[9] !== this.state.redScore.third_base.pebbles){
+    // update red 2nd hole
+    if(this.props.game.holes[9] !== this.state.redScore.second_base.pebbles){
       this.setState(prevState =>({
         ...prevState,
         redScore:{
           ...prevState.redScore,
-          third_base:{
-            ...prevState.redScore.third_base,
+          second_base:{
+            ...prevState.redScore.second_base,
             pebbles: this.props.game.holes[9]
           }
         }
       }))
     }
 
-    // update red 4th hole
-    if(this.props.game.holes[10] !== this.state.redScore.fourth_base.pebbles){
+    // update red 3rd hole
+    if(this.props.game.holes[10] !== this.state.redScore.third_base.pebbles){
       this.setState(prevState =>({
         ...prevState,
         redScore:{
           ...prevState.redScore,
-          fourth_base:{
-            ...prevState.redScore.fourth_base,
+          third_base:{
+            ...prevState.redScore.third_base,
             pebbles: this.props.game.holes[10]
           }
         }
       }))
     }
 
-    // update red 5th hole
-    if(this.props.game.holes[11] !== this.state.redScore.fifth_base.pebbles){
+    // update red 4th hole
+    if(this.props.game.holes[11] !== this.state.redScore.fourth_base.pebbles){
       this.setState(prevState =>({
         ...prevState,
         redScore:{
           ...prevState.redScore,
-          fifth_base:{
-            ...prevState.redScore.fifth_base,
+          fourth_base:{
+            ...prevState.redScore.fourth_base,
             pebbles: this.props.game.holes[11]
           }
         }
       }))
     }
 
-    // update red 6th hole
-    if(this.props.game.holes[12] !== this.state.redScore.sixth_base.pebbles){
+    // update red 5th hole
+    if(this.props.game.holes[12] !== this.state.redScore.fifth_base.pebbles){
       this.setState(prevState =>({
         ...prevState,
         redScore:{
           ...prevState.redScore,
-          sixth_base:{
-            ...prevState.redScore.sixth_base,
+          fifth_base:{
+            ...prevState.redScore.fifth_base,
             pebbles: this.props.game.holes[12]
           }
         }
       }))
     }
 
+    // update red 6th hole
+    if(this.props.game.holes[13] !== this.state.redScore.sixth_base.pebbles){
+      this.setState(prevState =>({
+        ...prevState,
+        redScore:{
+          ...prevState.redScore,
+          sixth_base:{
+            ...prevState.redScore.sixth_base,
+            pebbles: this.props.game.holes[13]
+          }
+        }
+      }))
+    }
+
     // update red 7th hole
-    if(this.props.game.holes[13] !== this.state.redScore.seventh_base.pebbles){
+    if(this.props.game.holes[14] !== this.state.redScore.seventh_base.pebbles){
       this.setState(prevState =>({
         ...prevState,
         redScore:{
           ...prevState.redScore,
           seventh_base:{
             ...prevState.redScore.seventh_base,
-            pebbles: this.props.game.holes[13]
+            pebbles: this.props.game.holes[14]
           }
         }
       }))
