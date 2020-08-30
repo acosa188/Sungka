@@ -41,6 +41,35 @@ const slice = createSlice({
                         // TODO
                         // Create the rule when hole does not have any marble, remove across enemy 
                         // marbles, then add it home base
+                        let check = (player === 'blue' && position < 7) || (player === 'red' && position > 7) ? true : false;
+                       
+                        // Check if hole is in the right position
+                        if (check){
+                            let across_position = 0;
+                            // Get the across position
+                            if(position < 7){
+                                across_position = 16 - (position + 2);
+                            }
+                            else{
+                                across_position = Math.abs((position + 2) - 16);
+                            }
+                     
+                            if(state.holes[across_position] > 0){
+                                let addToHome = state.holes[across_position] + 1;
+                                //empty both holes
+                                state.holes[across_position] = 0;
+                                state.holes[position] = 0;
+    
+                                //add pebbles to home
+                                if(player === 'blue'){
+                                    state.holes[7] += addToHome;
+
+                                }
+                                else{
+                                    state.holes[15] += addToHome;
+                                }
+                            }
+                        }                      
                         break;
                     }
                     state.holes[position] = 0;
