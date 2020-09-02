@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import HomeBase from './components/HomeBase';
 import SmallHole from './components/SmallHole';
-import { movePebbles as blueMovePebbles } from './store/blueState';
 import { movePebbles as gameMovePebbles } from './store/gameState';
 import './App.css';
 
@@ -20,32 +19,26 @@ class App extends Component {
         },
         second_base: {
           position: 6,
-          across_position: 9,
           pebbles: this.props.game.holes[5]
         },
         third_base: {
           position: 5,
-          across_position: 10,
           pebbles: this.props.game.holes[4]
         },
         fourth_base: {
           position: 4,
-          across_position: 11,
           pebbles: this.props.game.holes[3]
         },
         fifth_base: {
           position: 3,
-          across_position: 12,
           pebbles: this.props.game.holes[2]
         },
         sixth_base: {
           position: 2,
-          across_position: 13,
           pebbles: this.props.game.holes[1]
         },
         seventh_base: {
           position: 1,
-          across_position: 14,
           pebbles: this.props.game.holes[0]
         }
       },
@@ -54,37 +47,30 @@ class App extends Component {
         score: this.props.game.holes[15],
         first_base: {
           position: 1,
-          across_position: 6,
           pebbles: this.props.game.holes[8]
         },
         second_base: {
           position: 2,
-          across_position: 5,
           pebbles: this.props.game.holes[9]
         },
         third_base: {
           position: 3,
-          across_position: 4,
           pebbles: this.props.game.holes[10]
         },
         fourth_base: {
           position: 4,
-          across_position: 3,
           pebbles: this.props.game.holes[11]
         },
         fifth_base: {
           position: 5,
-          across_position: 2,
           pebbles: this.props.game.holes[12]
         },
         sixth_base: {
           position: 6,
-          across_position: 1,
           pebbles: this.props.game.holes[13]
         },
         seventh_base: {
           position: 7,
-          across_position: 0,
           pebbles: this.props.game.holes[14]
         }
       }
@@ -314,8 +300,8 @@ class App extends Component {
     }
   }
 
-  handleMovePebbles = (team, position, across_position) =>{  
-    this.props.gameMovePebbles({team, position, across_position});  
+  handleMovePebbles = (team, position) =>{  
+    this.props.gameMovePebbles({team, position});  
   }
 
   render() {

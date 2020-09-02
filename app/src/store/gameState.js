@@ -3,8 +3,6 @@ import { createSlice } from '@reduxjs/toolkit';
 const slice = createSlice({
     name: "gameState",
     initialState: {
-        blueScore: 0,
-        redScore: 0,
         holes: [7, 7, 7, 7, 7, 7, 7, 0, 7, 7, 7, 7, 7, 7, 7, 0]
     },
     reducers: {
