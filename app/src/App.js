@@ -77,13 +77,13 @@ class App extends Component {
     }
   }
 
-  componentDidUpdate(prevProps){
+  componentDidUpdate(prevProps) {
 
     // update blue score
-    if(this.props.game.holes[7] !== this.state.blueScore.score){
+    if (this.props.game.holes[7] !== this.state.blueScore.score) {
       this.setState(prevState => ({
         ...prevState,
-        blueScore:{
+        blueScore: {
           ...prevState.blueScore,
           score: this.props.game.holes[7]
         }
@@ -91,12 +91,12 @@ class App extends Component {
     }
 
     // update blue 1st hole
-    if(this.props.game.holes[6] !== this.state.blueScore.first_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[6] !== this.state.blueScore.first_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        blueScore:{
+        blueScore: {
           ...prevState.blueScore,
-          first_base:{
+          first_base: {
             ...prevState.blueScore.first_base,
             pebbles: this.props.game.holes[6]
           }
@@ -105,12 +105,12 @@ class App extends Component {
     }
 
     // update blue 2nd hole
-    if(this.props.game.holes[5] !== this.state.blueScore.second_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[5] !== this.state.blueScore.second_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        blueScore:{
+        blueScore: {
           ...prevState.blueScore,
-          second_base:{
+          second_base: {
             ...prevState.blueScore.second_base,
             pebbles: this.props.game.holes[5]
           }
@@ -119,12 +119,12 @@ class App extends Component {
     }
 
     // update blue 3rd hole
-    if(this.props.game.holes[4] !== this.state.blueScore.third_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[4] !== this.state.blueScore.third_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        blueScore:{
+        blueScore: {
           ...prevState.blueScore,
-          third_base:{
+          third_base: {
             ...prevState.blueScore.third_base,
             pebbles: this.props.game.holes[4]
           }
@@ -133,12 +133,12 @@ class App extends Component {
     }
 
     // update blue 4th hole
-    if(this.props.game.holes[3] !== this.state.blueScore.fourth_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[3] !== this.state.blueScore.fourth_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        blueScore:{
+        blueScore: {
           ...prevState.blueScore,
-          fourth_base:{
+          fourth_base: {
             ...prevState.blueScore.fourth_base,
             pebbles: this.props.game.holes[3]
           }
@@ -147,12 +147,12 @@ class App extends Component {
     }
 
     // update blue 5th hole
-    if(this.props.game.holes[2] !== this.state.blueScore.fifth_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[2] !== this.state.blueScore.fifth_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        blueScore:{
+        blueScore: {
           ...prevState.blueScore,
-          fifth_base:{
+          fifth_base: {
             ...prevState.blueScore.fifth_base,
             pebbles: this.props.game.holes[2]
           }
@@ -161,12 +161,12 @@ class App extends Component {
     }
 
     // update blue 6th hole
-    if(this.props.game.holes[1] !== this.state.blueScore.sixth_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[1] !== this.state.blueScore.sixth_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        blueScore:{
+        blueScore: {
           ...prevState.blueScore,
-          sixth_base:{
+          sixth_base: {
             ...prevState.blueScore.sixth_base,
             pebbles: this.props.game.holes[1]
           }
@@ -175,12 +175,12 @@ class App extends Component {
     }
 
     // update blue 7th hole
-    if(this.props.game.holes[0] !== this.state.blueScore.seventh_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[0] !== this.state.blueScore.seventh_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        blueScore:{
+        blueScore: {
           ...prevState.blueScore,
-          seventh_base:{
+          seventh_base: {
             ...prevState.blueScore.seventh_base,
             pebbles: this.props.game.holes[0]
           }
@@ -191,10 +191,10 @@ class App extends Component {
 
     // updating red
     // update red score
-    if(this.props.game.holes[15] !== this.state.redScore.score){
+    if (this.props.game.holes[15] !== this.state.redScore.score) {
       this.setState(prevState => ({
         ...prevState,
-        redScore:{
+        redScore: {
           ...prevState.redScore,
           score: this.props.game.holes[15]
         }
@@ -202,12 +202,12 @@ class App extends Component {
     }
 
     // update red 1st hole
-    if(this.props.game.holes[8] !== this.state.redScore.first_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[8] !== this.state.redScore.first_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        redScore:{
+        redScore: {
           ...prevState.redScore,
-          first_base:{
+          first_base: {
             ...prevState.redScore.first_base,
             pebbles: this.props.game.holes[8]
           }
@@ -216,12 +216,12 @@ class App extends Component {
     }
 
     // update red 2nd hole
-    if(this.props.game.holes[9] !== this.state.redScore.second_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[9] !== this.state.redScore.second_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        redScore:{
+        redScore: {
           ...prevState.redScore,
-          second_base:{
+          second_base: {
             ...prevState.redScore.second_base,
             pebbles: this.props.game.holes[9]
           }
@@ -230,12 +230,12 @@ class App extends Component {
     }
 
     // update red 3rd hole
-    if(this.props.game.holes[10] !== this.state.redScore.third_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[10] !== this.state.redScore.third_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        redScore:{
+        redScore: {
           ...prevState.redScore,
-          third_base:{
+          third_base: {
             ...prevState.redScore.third_base,
             pebbles: this.props.game.holes[10]
           }
@@ -244,12 +244,12 @@ class App extends Component {
     }
 
     // update red 4th hole
-    if(this.props.game.holes[11] !== this.state.redScore.fourth_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[11] !== this.state.redScore.fourth_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        redScore:{
+        redScore: {
           ...prevState.redScore,
-          fourth_base:{
+          fourth_base: {
             ...prevState.redScore.fourth_base,
             pebbles: this.props.game.holes[11]
           }
@@ -258,12 +258,12 @@ class App extends Component {
     }
 
     // update red 5th hole
-    if(this.props.game.holes[12] !== this.state.redScore.fifth_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[12] !== this.state.redScore.fifth_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        redScore:{
+        redScore: {
           ...prevState.redScore,
-          fifth_base:{
+          fifth_base: {
             ...prevState.redScore.fifth_base,
             pebbles: this.props.game.holes[12]
           }
@@ -272,12 +272,12 @@ class App extends Component {
     }
 
     // update red 6th hole
-    if(this.props.game.holes[13] !== this.state.redScore.sixth_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[13] !== this.state.redScore.sixth_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        redScore:{
+        redScore: {
           ...prevState.redScore,
-          sixth_base:{
+          sixth_base: {
             ...prevState.redScore.sixth_base,
             pebbles: this.props.game.holes[13]
           }
@@ -286,12 +286,12 @@ class App extends Component {
     }
 
     // update red 7th hole
-    if(this.props.game.holes[14] !== this.state.redScore.seventh_base.pebbles){
-      this.setState(prevState =>({
+    if (this.props.game.holes[14] !== this.state.redScore.seventh_base.pebbles) {
+      this.setState(prevState => ({
         ...prevState,
-        redScore:{
+        redScore: {
           ...prevState.redScore,
-          seventh_base:{
+          seventh_base: {
             ...prevState.redScore.seventh_base,
             pebbles: this.props.game.holes[14]
           }
@@ -300,84 +300,92 @@ class App extends Component {
     }
   }
 
-  handleMovePebbles = (team, position) =>{  
-    this.props.gameMovePebbles({team, position});  
+  handleMovePebbles = (team, position) => {
+    this.props.gameMovePebbles({ team, position });
   }
 
   render() {
     return (
       <div className="App">
-        <main className="container mt-5">
+        <main className="container-fluid container-md mt-5">
+          <div className="">
 
-          <div className="d-block d-md-none">
-            <h1 className="display-3">Please switch to landscape mode</h1>
-          </div>
+            <div className="d-block d-sm-none">
+              <h1 className="display-3">Please switch to landscape mode</h1>
+            </div>
 
-          <div className="d-none d-md-block">
-            <div className="row">
-              <div className="col b-bg">
-                <HomeBase {...this.state.blueScore} />
-              </div>
+            <div className="d-none d-sm-block">
+              <div className="sunka-board d-flex align-items-center">
 
-              <div className="col-8 p-bg">
+                <div className="p-2 ml-4">
+                  <HomeBase {...this.state.blueScore} />
+                </div>
 
-                <div className="d-flex flex-column h-100">
-                  <div className="g-bg flex-fill my-2">
-                    <div className="row px-2 h-100">
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.blueScore.first_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
+                <div className="p-2 flex-grow-1">
+                  <div className="center-item">
+
+                    <div className="d-flex flex-column h-100">
+                      <div className="flex-fill">
+                        <div className="row h-100 no-gutters">
+                          <div className="col">
+                            <SmallHole {...this.state.blueScore.first_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                          <div className="col">
+                            <SmallHole {...this.state.blueScore.second_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                          <div className="col">
+                            <SmallHole {...this.state.blueScore.third_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                          <div className="col">
+                            <SmallHole {...this.state.blueScore.fourth_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                          <div className="col">
+                            <SmallHole {...this.state.blueScore.fifth_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                          <div className="col">
+                            <SmallHole {...this.state.blueScore.sixth_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                          <div className="col">
+                            <SmallHole {...this.state.blueScore.seventh_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                        </div>
                       </div>
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.blueScore.second_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
+
+                      <div className="flex-fill">
+                        <div className="row h-100 no-gutters">
+                          <div className="col">
+                            <SmallHole {...this.state.redScore.first_base} team="red" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                          <div className="col">
+                            <SmallHole {...this.state.redScore.second_base} team="red" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                          <div className="col">
+                            <SmallHole {...this.state.redScore.third_base} team="red" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                          <div className="col">
+                            <SmallHole {...this.state.redScore.fourth_base} team="red" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                          <div className="col">
+                            <SmallHole {...this.state.redScore.fifth_base} team="red" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                          <div className="col">
+                            <SmallHole {...this.state.redScore.sixth_base} team="red" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                          <div className="col">
+                            <SmallHole {...this.state.redScore.seventh_base} team="red" handleMovePebbles={this.handleMovePebbles} />
+                          </div>
+                        </div>
                       </div>
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.blueScore.third_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
-                      </div>
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.blueScore.fourth_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
-                      </div>
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.blueScore.fifth_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
-                      </div>
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.blueScore.sixth_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
-                      </div>
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.blueScore.seventh_base} team="blue" handleMovePebbles={this.handleMovePebbles} />
-                      </div>
+
                     </div>
-                  </div>
-                  <div className="g-bg flex-fill my-2" >
-                    <div className="row px-2 h-100">
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.redScore.first_base} team="red" handleMovePebbles={this.handleMovePebbles} />
-                      </div>
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.redScore.second_base} team="red" handleMovePebbles={this.handleMovePebbles} />
-                      </div>
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.redScore.third_base} team="red" handleMovePebbles={this.handleMovePebbles} />
-                      </div>
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.redScore.fourth_base} team="red" handleMovePebbles={this.handleMovePebbles} />
-                      </div>
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.redScore.fifth_base} team="red" handleMovePebbles={this.handleMovePebbles} />
-                      </div>
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.redScore.sixth_base} team="red" handleMovePebbles={this.handleMovePebbles} />
-                      </div>
-                      <div className="col h-100 r-bg mx-1">
-                        <SmallHole {...this.state.redScore.seventh_base} team="red" handleMovePebbles={this.handleMovePebbles} />
-                      </div>
-                    </div>
+
                   </div>
                 </div>
 
-              </div>
+                <div className="p-2 mr-4">
+                  <HomeBase {...this.state.redScore} />
+                </div>
 
-              <div className="col b-bg">
-                <HomeBase {...this.state.redScore} />
               </div>
             </div>
           </div>
@@ -395,7 +403,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = () => {
-  return{
+  return {
     gameMovePebbles
   }
 }

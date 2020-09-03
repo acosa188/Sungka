@@ -1,0 +1,36 @@
+.base-bg{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-image: url(../images/hole-texture.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #271913;
+  }
+
+  /* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .base-bg{
+        height: 90px;
+        width: 90px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .base-bg{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .base-bg{
+        height: 150px;
+        width: 150px;
+      }
+}

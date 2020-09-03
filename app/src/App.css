@@ -1,17 +1,81 @@
-.b-bg{
-  background-color: blue;
-  min-height: 250px;
+html{
+  background-image: url(images/site-bg.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 100%;
 }
 
-.p-bg{
-  background-color: pink;
-  min-height: 250px;
+body{
+  background-color: transparent;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.g-bg{
-  background-color: green;
+
+.sunka-board{
+  background-color: rgb(85, 44, 15);
+  border-radius: 80px;
+  height: 180px;
+  background-image: url(images/wood-texture.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-.r-bg{
-  background-color: red;
+.center-item{
+  height: 160px;
 }
+
+.pebble-text{
+  font-size: 1rem;
+  padding: 7px;
+}
+
+.home-score-text{
+  font-size: 1.5rem;
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 576px) {
+  .pebble-text{
+    font-size: 1rem;
+    padding: 5px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+   .pebble-text{
+    font-size: 1.2rem;
+    padding: 7px;
+  }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+  .center-item{
+    height: 230px;
+  }
+
+  .sunka-board{
+    height: 250px;
+    border-radius: 120px;
+  }
+
+  .pebble-text{
+    font-size: 1.8rem;
+    padding: 12px;
+  }
+
+  .home-score-text{
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+ }

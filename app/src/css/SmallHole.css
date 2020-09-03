@@ -1,0 +1,50 @@
+.small-hole{
+    background-color: red;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    background-image: url(../images/hole-texture.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #271913;
+}
+
+
+@media (min-width: 576px) { 
+    .small-hole{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* Edge cases */
+@media (min-width: 646px) { 
+    .small-hole{
+        height: 45px;
+        width: 45px;
+      }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .small-hole{
+        height: 50px;
+        width: 50px;
+      }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .small-hole{
+        height: 60px;
+        width: 60px;
+      }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .small-hole{
+        height: 90px;
+        width: 90px;
+      }
+ }
